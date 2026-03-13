@@ -29,8 +29,9 @@ def compute_groundtruth(base, queries, qids, save_file):
         # keep only first GT_K neighbors
         gt[i] = filtered[:GT_K]
 
-    np.save(save_file, gt)
+    # name issue
+    #np.save(save_file, gt)
 
-    print("Groundtruth saved.")
+    # print("Groundtruth saved.")
 
     return gt
